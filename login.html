@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- cusom css -->
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+
+            <div class="form-body">
+
+                <h2 class="title">2FA Authentication</h2>
+
+                <form action="" class="the-form login-form">
+
+                    <label for="email">USER ID</label>
+                    <input type="text" name="userId" id="userId" placeholder="Enter your id">
+
+                    <label for="password">TOKEN</label>
+                    <input type="text" name="token" id="token" placeholder="Enter your token">
+
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div><!-- FORM BODY-->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+    
+    <script>
+        // login form
+const loginForm = document.querySelector('.login-form');
+
+loginForm.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const name = loginForm.userId;
+    const nameValue = name.value;
+    const password = loginForm.token;
+    const passwordValue = password.value;
+
+    // console.log(name, password);
+
+    if(nameValue.length && passwordValue.length){
+        console.log('yes', nameValue, passwordValue);
+        window.location.href = "./dashboard.html";
+    } else if (nameValue.length || passwordValue.length){
+            if(!nameValue.length) {
+                alert('Fill in your User Id')
+            } else if(!passwordValue.length) {
+                alert('Fill in your token')
+            }
+    }   else {
+        alert('Fill in your details')
+    }
+})
+    </script>
+</body>
+</html>

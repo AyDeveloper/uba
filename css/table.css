@@ -1,0 +1,97 @@
+.table-body {
+    width: 100%;
+    max-width: 750px;
+    margin: -5px 0 20px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+
+  .the-table tr {
+      border: 1px solid #333;
+  }
+
+  .the-table tr th {
+      /* border: 1px solid #333; */
+      font-size: 14px;
+      white-space: normal;
+      overflow: hidden;
+  }
+
+
+  .the-table tr th:nth-child(1),
+  .the-table tr th:nth-child(3),
+  .the-table tr th:nth-child(4) {
+      width: 10%;
+  }
+  .the-table tr th:nth-child(2) {
+      width: 20%;
+  }
+
+  .the-table tr th:nth-child(5),
+  .the-table tr th:nth-child(6) {
+      width: 25%;
+  }
+
+  .the-table tr td {
+      /* border: 1px solid #333;  */
+      font-size: 14px;
+      white-space: pre-wrap;
+      overflow: hidden;
+      text-align: center;
+  }
+
+  .the-table tr td.firstTd a {
+      color: #333;
+      text-decoration: overline;
+      text-decoration-color: #cd1107;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+      .the-table {
+          padding-top: 10px;
+      }
+
+      .the-table tr th {
+          padding: 0px 12px;
+          white-space: nowrap;
+      }
+  }
+
+
+  /* styles for viewTemplates */
+  .viewtemp-table  {
+      border: 1px solid #333;
+      margin: 15px;
+      padding: 10px 15px;
+  }
+
+  .viewtemp-table tr {
+      width: 100%;
+  }
+
+  .viewtemp-table tr td {
+      width: 50%;
+      padding: 10px 0;
+  }
+
+  .viewtemp-table tr td:nth-child(2) {
+      text-align: right;
+  }
+
+  .viewTemp-tableBtn a {
+    padding: 8px 15px;
+    border: 1px solid #645e5e;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    color: #645e5e;
+  }
+
+  .viewTemp-tableBtn a:hover {
+      background: #f3f3f3;
+      color: #333;
+      border: 1px solid #333 !important;
+  }
+  /* end of styles for view templates  */

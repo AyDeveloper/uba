@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Aggregrator</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- fav icon -->
+        <link rel="icon" href="https://www.ubagroup.com/wp-content/uploads/2018/06/cropped-UBA-Favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="https://www.ubagroup.com/wp-content/uploads/2018/06/cropped-UBA-Favicon-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="https://www.ubagroup.com/wp-content/uploads/2018/06/cropped-UBA-Favicon-180x180.png" />
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!-- custom css -->
+        <link rel="stylesheet" href="./css/dashboard.css">
+        <link rel="stylesheet" href="./css/aggr.css">
+</head>
+<body>
+    <div class="main-dashboard">
+        <div class="left-side">
+            <div class="left-side-header">
+                <div class="imgbox">
+                    <img src="./images/UBA-Logo.svg" alt="uba-logo">
+                </div>
+                <a href="dashboard.html">E-alert</a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li>
+                       <div class="dropdown">
+                           <h3 class="trigger">Alert Aggregrator</h3>
+                           <ul class="content">
+                               <li><a href="newaggr.html">New</a></li>
+                               <li><a href="viewaggr.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class=" dropdown">
+                            <h3 class="trigger">Alert Category</h3>
+                            <ul class="content">
+                                <li><a href="newcat.html">New</a></li>
+                                <li><a href="viewcat.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                       <div class="dropdown">
+                           <h3 class="trigger">Alert Template</h3>
+                           <ul class="content">
+                               <li><a href="newtemp.html">New</a></li>
+                               <li><a href="viewtemp.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class=" dropdown">
+                            <h3 class="trigger">Manage User</h3>
+                            <ul class="content">
+                                <li><a href="newuser.html">New</a></li>
+                                <li><a href="viewuser.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-side">
+                <header class="right-side-header">
+                    <button class="toggle">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+
+                    <div class="user">
+                        <img src="./images/user.svg" alt="user">
+                    </div>
+                </header>
+
+                <div class="adminContent">
+                    <h3>User Dashboard</h3>
+    
+                    <div class="adminItem">
+                        <li>Seunalert@gmail.com</li>
+                        <li>Admin</li>
+                        <li><a href="#">Logout</a></li>
+                    </div>
+                </div>
+
+                <div class="right-profile">
+                    <h3>New Category &#128071;</h3>
+
+                    <div class="form-body">
+                        <form class="the-form">
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1" class="my-0.5">Name:</label>
+                              <input type="text" class="form-control my-2" id="formControlInput1" placeholder="Enter your Name">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1" class="my-0.5">Code:</label>
+                              <input type="text" class="form-control my-2" id="FormControlInput2" placeholder="Enter your Code">
+                            </div>
+                            <div class="form-group">
+                              <label for="FormControlSelect1" class="my-0.5">Description</label>
+                              <textarea name="description" id="desc" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group my-4 d-flex">
+                                <input type="submit" value="Update" class="bg-light text-dark border-1">
+                                <input type="submit" value="Cancel" class="bg-light text-dark mx-4 border-1">
+                            </div>
+                          </form>
+                    </div>
+                 
+                </div>
+
+                <footer class="main-footer">
+                        <div class="copyright">
+                            <p> &copy; Copyright 2021 UBA. All Right Reserved</p>
+                        </div>
+                </footer>
+
+        </div>
+          
+    </div>  
+
+    <div class="mobile-nav">
+        <div class="mobileNav-center">
+            <div class="left-side-header">
+                <div class="imgbox">
+                    <img src="./images/UBA-Logo.svg" alt="uba-logo">
+                </div>
+                <a href="dashboard.html" class="mobile-logoName">E-alert</a>
+                <span class="cancelBtn"><i class="fas fa-times"></i></span>
+            </div>
+    
+            <div class="main-menu mobile-mainMenu">
+                <ul>
+                    <li>
+                       <div class=" dropdown">
+                           <h3 class="trigger">Alert Aggregrator</h3>
+                           <ul class="content">
+                               <li><a href="newaggr.html">New</a></li>
+                               <li><a href="viewaggr.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class=" dropdown">
+                            <h3 class="trigger">Alert Category</h3>
+                            <ul class="content">
+                                <li><a href="viewcat.html">New</a></li>
+                                <li><a href="newcat.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                       <div class="dropdown">
+                           <h3 class="trigger">Alert Template</h3>
+                           <ul class="content">
+                               <li><a href="newtemp.html">New</a></li>
+                               <li><a href="viewtemp.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class=" dropdown">
+                            <h3 class="trigger">Manage User</h3>
+                            <ul class="content">
+                                <li><a href="newuser.html">New</a></li>
+                                <li><a href="viewuser.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                </ul>
+            </div>
+        </div>
+     
+    </div>
+<!-- boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- dropdown js -->
+<script src="./js/dropdown.js"></script>
+</body>
+</html>

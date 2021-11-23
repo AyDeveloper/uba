@@ -41,10 +41,17 @@
       text-align: center;
   }
 
+  .the-table tr td.firstTd {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
   .the-table tr td.firstTd a {
-      color: #333;
-      text-decoration: overline;
-      text-decoration-color: #cd1107;
+      color: #645e5e;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
   }
 
 

@@ -375,6 +375,8 @@ body {
     font-size: 16px;
     position: relative;
     list-style: none;
+    font-weight: 400;
+    font-family: monospace;
 }
 
 .adminItem li:nth-child(1)::after, 
@@ -390,6 +392,7 @@ body {
 
 .adminItem li a {
     color: #333;
+    font-style: oblique;
 } 
 
 

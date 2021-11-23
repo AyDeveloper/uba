@@ -68,6 +68,11 @@
 
 
   /* styles for viewTemplates */
+  .viewtemp-table-body {
+      width: 100%;
+      max-width: 400px;
+      /* background-color: #645e5e; */
+  }
   .viewtemp-table  {
       border: 1px solid #333;
       margin: 15px;

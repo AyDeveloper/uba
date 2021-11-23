@@ -33,8 +33,6 @@ h2 {
 }
 
 body {
-  margin: unset;
-  padding: unset;
   color: #222222;
   background-color: #f2f2f0;
   overflow-x: hidden;
@@ -61,6 +59,10 @@ body {
     border-bottom:8px solid #cd1107 ;
 }
 
+.adminItem {
+    display:  none;
+}
+
 .toggle {
     border: 1px solid transparent;
     background: none;
@@ -70,6 +72,13 @@ body {
     font-size: 1.6em;
     cursor: pointer;
 }
+
+.right-side-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+} 
 
 .user {
     width: 45px;
@@ -92,35 +101,6 @@ body {
 .adminContent h3 {
     font-size: 2em;
     font-size: #333;
-}
-
-.adminItem {
-    margin-top: 1rem;
-    display: flex;
-    gap: 18px;
-    align-items: center;
-}
-
-
-.adminItem li  {
-    font-size: 16px;
-    position: relative;
-    list-style: none;
-}
-
-.adminItem li:nth-child(1)::after, 
-.adminItem li:nth-child(2)::after  {
-    position: absolute;
-    content: '|';
-    bottom: 0px;
-    right: -12px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #cd1107;
-}
-
-.adminItem li a {
-    color: #333;
 }
 
 .right-profile {
@@ -380,23 +360,38 @@ body {
         display: none;
     }
 
-    .adminContent {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .right-side-cont {
+        width: 100%;
     }
 
-    .adminItem {
-        margin-top: unset;
-        gap: 40px;
-    }
+.right-side-header .adminItem {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
 
-    .adminItem li:nth-child(1)::after, 
-    .adminItem li:nth-child(2)::after  {
-        top: 0px;
-        right: -22px;
-    }
+
+.adminItem li  {
+    font-size: 16px;
+    position: relative;
+    list-style: none;
+}
+
+.adminItem li:nth-child(1)::after, 
+.adminItem li:nth-child(2)::after  {
+    position: absolute;
+    content: '|';
+    bottom: 0px;
+    right: -12px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #cd1107;
+}
+
+.adminItem li a {
+    color: #333;
+} 
+
 
     .main-menu {
         margin-top: 2rem;

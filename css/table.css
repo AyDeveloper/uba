@@ -11,33 +11,14 @@
   }
 
   .the-table tr th {
-      /* border: 1px solid #333; */
       font-size: 14px;
       white-space: normal;
       overflow: hidden;
   }
 
-
-  .the-table tr th:nth-child(1),
-  .the-table tr th:nth-child(3),
-  .the-table tr th:nth-child(4) {
-      width: 10%;
-  }
-  .the-table tr th:nth-child(2) {
-      width: 20%;
-  }
-
-  .the-table tr th:nth-child(5),
-  .the-table tr th:nth-child(6) {
-      width: 25%;
-  }
-
   .the-table tr td {
-      /* border: 1px solid #333;  */
       font-size: 14px;
-      white-space: pre-wrap;
       overflow: hidden;
-      text-align: center;
   }
 
   .the-table tr td.firstTd {

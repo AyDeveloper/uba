@@ -421,7 +421,7 @@ body {
 
     .dropdown .trigger{
         position: relative;
-        border-bottom: 1px solid #cd1107;
+        border-bottom: 2px solid #cd1107;
         padding: 10px;
         cursor: pointer;
         font-size: 16px;
@@ -438,6 +438,12 @@ body {
         font-weight: bold;
         transition: transform 0.3s;
     }
+
+    .dropdown .trigger.active {
+        background-color: #cd1107;
+        color: #f2f2f0;
+        border-left: 2px solid #ccc;
+    }
     
     .dropdown .trigger.active::after {
         transform: rotate(-90deg) scale(0.5, 1);
@@ -452,16 +458,18 @@ body {
     .dropdown .content li {
         padding: 10px 5px;
         list-style-type: none;
+        transition: all 0.35 ease-in;
     }
 
     .dropdown .content li:hover {
-         background: #cd1107;
+         /* background: #cd1107; */
          border-bottom-left-radius: 8px;
          border-bottom-right-radius: 8px;
+         border-bottom: 2px solid #ccc;
     }
 
     .dropdown .content li:hover a {
-        color: #f3f3f3;
+        color: #333;
     }
 
     .dropdown .content li a{

@@ -52,4 +52,21 @@
         width: 100%;
         max-width: 400px;
     } 
+
+    .modify .table tr  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+
+    .modify table tr td {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
   /* end of styles for view templates  */   
+

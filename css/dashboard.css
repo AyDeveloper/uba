@@ -81,18 +81,22 @@ body {
     align-items: center;   
 } 
 
-.user {
+/* .user {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     border: 1px solid #817776;
     display: grid;
     place-items: center;
-}
+} */
 
-.user img {
+/* .user img {
     max-width:100%;
     object-fit: contain;
+} */
+
+.right-side-cont .user h1 {
+    font-size: 16px;
 }
 
 .adminContent {
@@ -355,6 +359,10 @@ body {
         padding: 35px 25px;
     }
 
+    .right-side-cont .user h1 {
+        font-size: 24px;
+    }
+
     .toggle {
         display: none;
     }
@@ -427,8 +435,6 @@ body {
         font-size: 16px;
     }
 
-
-    
     .dropdown .trigger::after {
         position: absolute;
         content: '>';

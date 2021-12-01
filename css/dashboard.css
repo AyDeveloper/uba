@@ -81,34 +81,25 @@ body {
     align-items: center;   
 } 
 
-/* .user {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 1px solid #817776;
-    display: grid;
-    place-items: center;
-} */
-
-/* .user img {
-    max-width:100%;
-    object-fit: contain;
-} */
-
 .right-side-cont .user h1 {
     font-size: 16px;
+    color: grey;
 }
 
 .adminContent {
     padding: 20px 25px;
 }
 
-.adminContent h3 {
-    font-size: 2em;
-    font-size: #333;
+.adminContent .breadcrumb-item.active {
+    font-weight: 750;
+    color: #333;
 }
 
 .right-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding:10px 25px;  
 }
 
@@ -403,7 +394,7 @@ body {
 
 
     .main-menu {
-        margin-top: 3.5rem;
+        margin-top: 2rem;
         padding: 0px 15px;
     }
 

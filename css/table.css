@@ -64,6 +64,12 @@
         border: transparent;
     }
 
+    .views .table tr td:first-child {
+        width: 34%;
+    }
+    .views .table tr td:last-child {
+        width: 66%;
+    }
     .views.modify .table tr  {
         display: flex;
         flex-direction: row;

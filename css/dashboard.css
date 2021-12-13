@@ -177,7 +177,6 @@ body {
     height: 100%;
     background: linear-gradient(35deg, #f3f3f3, snow);
     z-index: 99;
-    /* display: none; */
     transform: translateX(-2000px);
     transition: all 0.45s ease-in-out;
 }

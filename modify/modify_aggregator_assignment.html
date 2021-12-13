@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Aggregrator Assignment</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- fav icon -->
+        <link rel="icon" href="https://www.ubagroup.com/wp-content/uploads/2018/06/cropped-UBA-Favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="https://www.ubagroup.com/wp-content/uploads/2018/06/cropped-UBA-Favicon-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="https://www.ubagroup.com/wp-content/uploads/2018/06/cropped-UBA-Favicon-180x180.png" />
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!-- custom css -->
+        <link rel="stylesheet" href="../css/dashboard.css">
+        <link rel="stylesheet" href="../css/table.css">
+        <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"> -->
+
+</head>
+<body>
+    <div class="main-dashboard">
+        <div class="left-side">
+            <div class="left-side-header">
+                <div class="imgbox">
+                    <img src="../images/UBA-Logo.svg" alt="uba-logo">
+                </div>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li>
+                       <div class=" dropdown">
+                           <p class="trigger">Alert Aggregrator</p>
+                           <ul class="content">
+                               <li><a href="../newaggr.html">New</a></li>
+                               <li><a href="../viewaggr.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class=" dropdown">
+                            <p class="trigger">Aggregrator Assignment</p>
+                            <ul class="content">
+                                <li><a href="../newassign.html">New</a></li>
+                                <li><a href="../viewassign.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                        <div class=" dropdown">
+                            <p class="trigger">Alert Category</p>
+                            <ul class="content">
+                                <li><a href="../newcat.html">New</a></li>
+                                <li><a href="../viewcat.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                       <div class="dropdown">
+                           <p class="trigger">Alert Template</p>
+                           <ul class="content">
+                               <li><a href="../newtemp.html">New</a></li>
+                               <li><a href="../viewtemp.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <p class="trigger">Template Assignment</p>
+                            <ul class="content">
+                                <li><a href="#">New</a></li>
+                                <li><a href="../view_template_assignments.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                        <div class=" dropdown">
+                            <p class="trigger">Manage User</p>
+                            <ul class="content">
+                                <li><a href="../newuser.html">New</a></li>
+                                <li><a href="../viewuser.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <header class="right-side-header">
+                <button class="toggle">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+
+                <div class="right-side-cont">
+                    <div class="user">
+                        <h1>UBA CUSTOMER TRANSACTION ALERT SYSTEM</h1>
+                    </div>
+
+                    <div class="adminItem">
+                        <li>Seunalert@gmail.com</li>
+                        <li>Admin</li>
+                        <li><a href="#">Logout</a></li>
+                    </div>
+                </div>
+            </header>
+
+                <div class="adminContent">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="dashboard.html" class="text-decoration-none text-secondary">Dashboard</a></li>
+                           <li class="breadcrumb-item"><a href="../view/view_aggregrator_assignment.html" class="text-decoration-none text-secondary">View Aggregrator Assignment</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">Modify Aggregrator Assignment</li>
+                        </ol>
+                      </nav>
+                </div>
+
+                <div class="right-profile">
+
+                    <div class="views modify">
+                        <table class="table table-striped" id="table_id">
+                            <tr>
+                                <td>   
+                                    ASSIGN OPTION
+                                 </td>                            
+                                <td>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="#">-Select-</option>
+                                        <option value="acct_no">Account No</option>
+                                        <option value="scheme-code">Scheme Code</option>
+                                        <option value="scheme_type"> Scheme Type</option>
+                                        <option value="branch">Branch</option>
+                                        <option value="bank">Bank</option>
+                                        <option value="region">Region</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    BANK
+                                 </td>                            
+                                <td>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="#">-Select-</option>
+                                        <option value="nigeria">Nigeria</option>
+                                        <option value="uganda">Uganda</option>
+                                        <option value="cameroun">Cameroun</option>
+                                        <option value="congo">Congo</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    VALUE
+                                 </td>                            
+                                <td>
+                                    <input class="form-control" type="text" value="090887766" aria-label="readonly input example">   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    SOL_ID
+                                 </td>                            
+                                <td>
+                                    <input class="form-control" type="text" value="POL10005" aria-label="readonly input example">   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    REGION
+                                 </td>                            
+                                <td>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="#">-Select-</option>
+                                        <option value="Nig">NIGERIA</option>
+                                        <option value="uemoa">UEMOA</option>
+                                        <option value="Cemac">CEMAC</option>
+                                        <option value="eng">ENGLISH</option>
+                                        <option value="ugd">UGANDA</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    BALANCE
+                                 </td>                            
+                                <td>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="#" selected>-Select-</option>
+                                        <option value="clear">Clear</option>
+                                        <option value="show">Show</option>
+                                        <option value="hide">Hide</option>
+                                        <option value="mask">Mask</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    DESCRIPTION
+                                 </td>                            
+                                <td>
+                                    <input class="form-control" type="text" value="Lorem_ipsum" aria-label="readonly input example">   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    LANGUAGE
+                                 </td>                            
+                                <td>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="#" selected>-Select-</option>
+                                        <option value="English">English</option>
+                                        <option value="French">French</option>
+                                        <option value="Portuguese">Portuguese</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    LAST MODIFIED
+                                 </td>                            
+                                <td>
+                                    22-10-2021 8:10PM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   
+                                    LAST MODIFIED BY
+                                 </td>                            
+                                <td>
+                                    CHRIS FASEUN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="modify-table-actionBtn">
+                                    <button class="btn btn-primary my-2"> <a href="#" class="text-decoration-none text-light d-block">Update</a></button>
+                                    <button class="btn btn-danger my-2 mx-3"><a href="#" class="text-decoration-none text-light d-block">Cancel</a></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                 
+                </div>
+
+                <footer class="main-footer">
+                        <div class="copyright">
+                            <p> &copy; Copyright 2021 UBA. All Right Reserved</p>
+                        </div>
+                </footer>
+        </div>
+          
+    </div>  
+
+    <div class="mobile-nav">
+        <div class="mobileNav-center">
+            <div class="left-side-header">
+                <div class="imgbox">
+                    <img src="../images/UBA-Logo.svg" alt="uba-logo">
+                </div>
+                <a href="dashboard.html" class="mobile-logoName">Home</a>
+                <span class="cancelBtn"><i class="fas fa-times"></i></span>
+            </div>
+    
+            <div class="main-menu mobile-mainMenu">
+                <ul>
+                    <li>
+                       <div class=" dropdown">
+                           <p class="trigger">Alert Aggregrator</p>
+                           <ul class="content">
+                               <li><a href="../newaggr.html">New</a></li>
+                               <li><a href="../viewaggr.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class=" dropdown">
+                            <p class="trigger">Aggregrator Assignment</p>
+                            <ul class="content">
+                                <li><a href="../newassign.html">New</a></li>
+                                <li><a href="../iewassign.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                        <div class=" dropdown">
+                            <p class="trigger">Alert Category</p>
+                            <ul class="content">
+                                <li><a href="../newcat.html">New</a></li>
+                                <li><a href="../viewcat.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                       <div class="dropdown">
+                           <p class="trigger">Alert Template</p>
+                           <ul class="content">
+                               <li><a href="../newtemp.html">New</a></li>
+                               <li><a href="../viewtemp.html">View</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <p class="trigger">Template Assignment</p>
+                            <ul class="content">
+                                <li><a href="#">New</a></li>
+                                <li><a href="../view_template_assignments.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                    <li>
+                        <div class=" dropdown">
+                            <p class="trigger">Manage User</p>
+                            <ul class="content">
+                                <li><a href="../newuser.html">New</a></li>
+                                <li><a href="../viewuser.html">View</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                </ul>
+            </div>
+        </div>
+     
+    </div>
+  
+
+<!-- data table script -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script> -->
+
+<!-- jsdelivr bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="../js/dropdown.js"></script>
+<!-- <script src="./js/datatable.js"></script> -->
+
+</body>
+</html>

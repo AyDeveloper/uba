@@ -479,4 +479,13 @@ body {
         display: block;
     }
 
+    .main-footer{
+        height: 20vh;
+    }
+    
+    .copyright p {
+        text-align: center;
+        padding:240px 0 20px;
+    }
+
 }

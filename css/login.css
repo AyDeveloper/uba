@@ -107,11 +107,11 @@ a:hover {
 .the-form [type="text"] {
   padding: 15px;
   font-size: 16px;
-  background: #c8b7b7;
+  background: #f2f2f0;
   border: 1px solid #f3f3f3;
   border-radius: 3px;
   margin-bottom: 15px;
-  transition: background .3s;
+  transition: all .3s;
   color: #333;
 }
 

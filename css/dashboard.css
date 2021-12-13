@@ -480,12 +480,12 @@ body {
     }
 
     .main-footer{
-        height: 20vh;
+        height:8vh;
     }
     
     .copyright p {
         text-align: center;
-        padding:240px 0 20px;
+        padding: 200px 0px 20px;
     }
 
 }
